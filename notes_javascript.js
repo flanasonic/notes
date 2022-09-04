@@ -153,19 +153,24 @@
     // different types of functions have different syntaxes
     // JS has many ways to write a function:
 
-        // function declaration: binds a function to a name (like we do with variables)
-        // consists of the function keyword, optional parametera, function name, function body
+        // FUNCTION DECLARATION:
+        // binds a function to a name (like we do with variables)
+       
         // syntax: 
         // function functionName(optional paremeters) {Code body between curly braces};
+
         // example:
         // function add(num1, num2) {return num1 + num2;}
+
         // 'hoisting' in JS allows a function to be called before it's even been declared!
+
+        // 
 
 
 
     // FUNCTION WITH NO PARAMETERS:
 
-        // a function declaration:
+        // function declaration with no parameters:
         // function noParamDeclaration(){
         //     return "This function doesn't take any parameters";
         // };
@@ -187,7 +192,7 @@
 
     // FUNCTION WITH ONE PARAMETER:
 
-        // a function declaration:
+        // a function declaration with one parameter:
         // function oneParamDeclaration(param){
         //     return `The argument supplied to this function is ${param}`
         // }
@@ -207,7 +212,7 @@
 
     // FUNCTION WITH TWO OR MORE PARAMETERS:
 
-        // a function declaration:
+        // a function declaration with two or more parameters:
         // function twoParamDeclaration(param1, param2){
         //     return `My arguments are ${param1} and ${param2}`
         // }
