@@ -62,6 +62,7 @@
         // 'Hola'.length
         // returns 4
 
+
 // METHODS:
 
     // methods are actions we can perform on objects
@@ -71,6 +72,7 @@
     // and parentheses
         // syntax:
         // 'a string'.methodName()
+
         // example:
         // 'hello'.toUpperCase()
 
@@ -84,6 +86,9 @@
     // can only be declared once
     // can be declared without assigning a value?? is this true for const??
     // if not initialized (assigned a value), value is stored as 'undefined'
+
+
+  
 
     // const 
     // keyword const signals that a variable can't be reassigned
@@ -148,7 +153,7 @@
     // notes go here...
 
 
-// FUNCTION SYNTAX: (copied from Trew's lecture notes...)
+// FUNCTIONS: (copied from Trew's lecture notes...)
 
     // different types of functions have different syntaxes
     // JS has many ways to write a function:
@@ -164,6 +169,28 @@
 
         // 'hoisting' in JS allows a function to be called before it's even been declared!
 
+
+        // RETURN:
+        // The return keyword allows functions to produce an output. 
+        // We can then save the output to a variable for later use.
+        // If not specified, a function's return value is 'undefined'
+
+        // HELPER FUNCTIONS:
+        // we can use the return value of a function inside another function.
+        // a function called within another function is often referred to as a 'helper function'
+
+
+        // FUNCTION EXPRESSIONS:
+        // function expressions are not hoisted so they cannot be called before they are defined.
+        // to define a function inside an expression - first declare a variable to make the variable's name be
+        // the name of our function, then assign as the variable's value an unnamed/anonymous function, 
+        // created by using the function keyword followed by ()
+        // const variableName = function(parameters) { function body };
+
+        // ARROW FUNCTIONS:
+        // remove the need to type out the keyword 'function' every time we create a function
+        // instead, we include the parameters inside the ( ) and add an arrow => pointing to the 
+        // function body surrounded in { } like this:
         // 
 
 
@@ -175,16 +202,16 @@
         //     return "This function doesn't take any parameters";
         // };
 
-        // a function expression:
+        // a function expression with no parameters:
         // const noParamExpression = function(){
         //     return "This function doesn't take any parameters";
         // };
 
-        // an arrow function:
+        // an arrow function with no parameters:
         // const noParamArrow = () => "This function doesn't take any parameters"
         // remember, if it's a single line arrow function, the 'return' statement is implicit
 
-        // a multi-line arrow function:
+        // a multi-line arrow function with no parameters:
         // const noParamArrowMultiLine = () => {
         //     return "This function doesn't take any parameters"
         // }
@@ -197,15 +224,15 @@
         //     return `The argument supplied to this function is ${param}`
         // }
 
-        // a function expression:
+        // a function expression with one parameter:
         // const oneParamExpression = function(param){
         //     return `The argument supplied to this function is ${param}`
         // }
 
-        // an arrow function:
+        // an arrow function with one parameter:
         // const oneParamArrow = param => `The argument supplied to this function is ${param}`
 
-        // a multi-line arrow function:
+        // a multi-line arrow function with on parameter:
         // const oneParamArrowMultiLine = param => {
         //     return `The argument supplied to this function is ${param}`
         // }
