@@ -40,36 +40,37 @@
 
 // OBJECTS:
 
-    // objects can be assigned to variables just like any JavaScript type
-    // objects are filled with unordered data, organized into key-value pairs
+    // are mutable
+    // are filled with unordered data, organized into key-value pairs
+    // they can be assigned to variables just like any JavaScript type
     // in addition to properties, objects can have methods (actions)
     // a key/identifier is like a variable name that points to a value
     // keys must be strings, but if there are no special characters we can leave off the " "
-    // values can be of any data type, including functions or other object
+    // values can be of any data type, including functions or other objects
     // JS comes with a lot of built in objects, we can also create our own
     // data types are also objects, each has acess to specific properties
-
         // syntax:
         // let objectName = {'Property Name': 'Property Value', propName: 'Prop Value'};
+    // to add or change key-value pairs, we can use dot or bracket notation and the assignment operator
 
 
 // PROPERTIES:
 
     // properties are stored information about an object
-    // to access using dot notaion we write the object’s name, followed by the dot operator, then the property name (key):
-
+    // we can access properties using dot notation or bracket notation
+    // to access using dot notation
+    
         // syntax:
-        // object.property
-
-        // example:
-        // string.length
-        // returns the number of chars in a string
+        // objectName.propertyName;
         
-        // example:
+        // dot noation example:
         // 'Hola'.length
         // returns 4
 
-    // 
+    // to access using bracket notation
+    // bracket notation lets us use a variable inside the brackets to select the keys of an object,
+    // which can be especially helpful when working with functions
+ 
 
 
 
