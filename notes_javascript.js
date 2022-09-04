@@ -40,17 +40,24 @@
 
 // OBJECTS:
 
+    // objects can be assigned to variables just like any JavaScript type
+    // objects are filled with unordered data, organized into key-value pairs
+    // in addition to properties, objects can have methods (actions)
+    // a key/identifier is like a variable name that points to a value
+    // keys must be strings, but if there are no special characters we can leave off the " "
+    // values can be of any data type, including functions or other object
     // JS comes with a lot of built in objects, we can also create our own
-    // Data types are also objects
-    // Objects can have properties, stored information.
-    // Objects can also have methods, which perform actions. 
+    // data types are also objects, each has acess to specific properties
+
+        // syntax:
+        // let objectName = {'Property Name': 'Property Value', propName: 'Prop Value'};
 
 
 // PROPERTIES:
 
     // properties are stored information about an object
-    // all data types have access to specific properties
-    // properties are denoted with a . after the object name/instance
+    // to access using dot notaion we write the object’s name, followed by the dot operator, then the property name (key):
+
         // syntax:
         // object.property
 
@@ -62,14 +69,16 @@
         // 'Hola'.length
         // returns 4
 
+    // 
+
+
 
 // METHODS:
 
     // methods are actions we can perform on objects
-    // data types have access to specific methods that allow us to handle
-    // instances of that data type. 
-    // they are called by appending an instance with a period, the method name, 
-    // and parentheses
+    // data types have access to specific methods that allow us to handle instances of that data type. 
+    // methods are called by appending an instance with a period, the method name, and ()
+
         // syntax:
         // 'a string'.methodName()
 
