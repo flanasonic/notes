@@ -153,45 +153,39 @@
     // notes go here...
 
 
-// FUNCTIONS: (copied from Trew's lecture notes...)
+// FUNCTIONS: 
 
-    // different types of functions have different syntaxes
-    // JS has many ways to write a function:
+    // the 'return' keyword allows functions to produce an output, which can be saved to a variable
+    // if not specified, a function's return value is 'undefined'
+    // we can use the return value of a function inside another function, a function called within another 
+    // function is often referred to as a 'helper function'
+    // JS has many ways to write a function!
 
-        // FUNCTION DECLARATION:
-        // binds a function to a name (like we do with variables)
+        // FUNCTION DECLARATIONS:
+        // bind a function to a name (like we do with variables)
+        // can be hoisted - they can be called before even being declared!
        
         // syntax: 
-        // function functionName(optional paremeters) {Code body between curly braces};
+        // function functionName(optional parameters) {Code body};
 
         // example:
         // function add(num1, num2) {return num1 + num2;}
 
-        // 'hoisting' in JS allows a function to be called before it's even been declared!
-
-
-        // RETURN:
-        // The return keyword allows functions to produce an output. 
-        // We can then save the output to a variable for later use.
-        // If not specified, a function's return value is 'undefined'
-
-        // HELPER FUNCTIONS:
-        // we can use the return value of a function inside another function.
-        // a function called within another function is often referred to as a 'helper function'
-
 
         // FUNCTION EXPRESSIONS:
-        // function expressions are not hoisted so they cannot be called before they are defined.
-        // to define a function inside an expression - first declare a variable to make the variable's name be
-        // the name of our function, then assign as the variable's value an unnamed/anonymous function, 
-        // created by using the function keyword followed by ()
-        // const variableName = function(parameters) { function body };
+        // allows us to define a function inside an expression 
+        // function expressions can't be hoisted - they must be defined before they can be called
+        // first, we declare a variable to make the variable's name be the name of our function
+        // we then use the 'function' keyword followed by () to assign an unnamed/anonymous function as the variable's value
+        // syntax: 
+        // const variableName = function(optional parameters) {function body};
+       
 
         // ARROW FUNCTIONS:
-        // remove the need to type out the keyword 'function' every time we create a function
-        // instead, we include the parameters inside the ( ) and add an arrow => pointing to the 
-        // function body surrounded in { } like this:
-        // 
+        // remove the need to include the keyword 'function' every time we create a function
+        // instead, we place parameters inside () and add an => pointing to the  function body surrounded by {}
+        // syntax:
+        // const functionName = (optional parameters) => (functon body};
 
 
 
