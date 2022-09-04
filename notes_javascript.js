@@ -151,6 +151,16 @@
 // FUNCTION SYNTAX: (copied from Trew's lecture notes...)
 
     // different types of functions have different syntaxes
+    // JS has many ways to write a function:
+
+        // function declaration: binds a function to a name (like we do with variables)
+        // consists of the function keyword, optional parametera, function name, function body
+        // syntax: 
+        // function functionName(optional paremeters) {Code body between curly braces};
+        // example:
+        // function add(num1, num2) {return num1 + num2;}
+        // 'hoisting' in JS allows a function to be called before it's even been declared!
+
 
 
     // FUNCTION WITH NO PARAMETERS:
