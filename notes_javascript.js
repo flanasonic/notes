@@ -1,6 +1,7 @@
+// NODE:
 
-// NODE: 
     // node is a program that runs JavaScript 
+
 
 // SOME USEFUL NODE COMMANDS:
 
@@ -19,6 +20,7 @@
 
 
 // JAVASCRIPT SYNTAX:
+
     // statements end with a semicolon ;
     // curly braces used where Python uses indentation {}
     // variable names written in lowerCamelCase 
@@ -27,31 +29,71 @@
 
 
 // PRINTING:
-    // the method console.log() is used to print messages to the console 
+
+    // console.log() is used to print messages to the console 
     // it can also print objects and other info 
+    // when we use console.log() we’re calling the method .log() 
+    // on the console object.
     // example:
     // console.log('Hello, World!');
 
+
+// OBJECTS:
+
+    // JS comes with a lot of built in objects, we can also create our own
+    // Data types are also objects
+    // Objects can have properties, stored information.
+    // Objects can also have methods, which perform actions. 
+
+
 // PROPERTIES:
+
+    // properties are stored information about an object
     // all data types have access to specific properties
-    // to retrieve property information, we append the name of the instance
-    // with a period and the property name
-    // the string.length property, for example, returns the number of chars 
-    // in a string
+    // properties are denoted with a . after the object name/instance
+        // syntax:
+        // object.property
 
-    // example:
-    // console.log('howdy'.length);
+        // example:
+        // string.length
+        // returns the number of chars in a string
+        
+        // example:
+        // 'Hola'.length
+        // returns 4
+
+// METHODS:
+
+    // methods are actions we can perform on objects
+    // data types have access to specific methods that allow us to handle
+    // instances of that data type. 
+    // they are called by appending an instance with a period, the method name, 
+    // and parentheses
+        // syntax:
+        // 'a string'.methodName()
+        // example:
+        // 'hello'.toUpperCase()
 
 
-// VARIABLES:
-    // come in 2 flavors "const" and "let"
-    // must be declared with a keyword
+// VARIABLES IN JS:
+    // as in other languages, in JS, variables label and store data 
+    //(values) in memory
+
+    // JS VARIABLE RULES:
+    // must be declared with keyword 'const' or 'let'
     // can only be declared once
+    // can be declared without assigning a value?? is this true for const??
+    // if not initialized (assigned a value), value is stored as 'undefined'
 
-    // const is preferable, unless variable needs to be reassigned later
-    // contents of a const variable can be mutated, but not reasssigned
+    // const 
+    // keyword const signals that a variable can't be reassigned
+    // attempting to reassign will throw a TypeError
+    // contents can be mutated (but not reasssigned)
+    // const is preferable to let, unless variable needs to be reassigned later
 
-    // let should be usef if variable may need to be reassigned later 
+    // let
+    // keyword let signals that a variable can be reassigned
+    // should be used if variable may need to be reassigned later 
 
     
 // LOGICAL OPERATORS:
@@ -60,12 +102,6 @@
     // "or": ||
     // "not": !
 
-
-// METHODS:
-    // methods return information about an object 
-    // they are called by appending  an instance with a period, followed by 
-    // the method name, and () 
-    
 
 // CONDITIONALS:
 
@@ -91,13 +127,14 @@
 
 
 // GENERIC FOR LOOPS:
-// Python doesn't have these!
+
+// Python doesn't have generic for loops!
 
     // syntax:
     // for (init; conditional; exp)
 
-    // init: a variable declaration, executed once
-    // conditional: evaluated before every iteration
+    // init: variable declaration, executed once
+    // conditional: gets evaluated before every iteration
     // exp: executed at end of every iteration
 
     // example:
@@ -107,82 +144,116 @@
 
 
 // DESTRUCTURING SYNTAX:
+
     // notes go here...
 
 
-// FUNCTION SYNTAX:
+// FUNCTION SYNTAX: (copied from Trew's lecture notes...)
+
     // different types of functions have different syntaxes
+
 
     // FUNCTION WITH NO PARAMETERS:
 
-        // function declaration:
+        // a function declaration:
         // function noParamDeclaration(){
         //     return "This function doesn't take any parameters";
         // };
 
-        // function expression:
+        // a function expression:
         // const noParamExpression = function(){
         //     return "This function doesn't take any parameters";
         // };
 
-        // arrow function:
+        // an arrow function:
         // const noParamArrow = () => "This function doesn't take any parameters"
         // remember, if it's a single line arrow function, the 'return' statement is implicit
 
-        // multi-line arrow function:
+        // a multi-line arrow function:
         // const noParamArrowMultiLine = () => {
         //     return "This function doesn't take any parameters"
         // }
 
+
     // FUNCTION WITH ONE PARAMETER:
 
-        // function declaration:
+        // a function declaration:
         // function oneParamDeclaration(param){
         //     return `The argument supplied to this function is ${param}`
         // }
 
-        // function expression:
+        // a function expression:
         // const oneParamExpression = function(param){
         //     return `The argument supplied to this function is ${param}`
         // }
 
-        // arrow function:
+        // an arrow function:
         // const oneParamArrow = param => `The argument supplied to this function is ${param}`
 
-        // multi-line arrow function:
+        // a multi-line arrow function:
         // const oneParamArrowMultiLine = param => {
         //     return `The argument supplied to this function is ${param}`
         // }
 
-// FUNCTION WITH TWO OR MORE PARAMETERS:
+    // FUNCTION WITH TWO OR MORE PARAMETERS:
 
-    // function declaration:
-    // function twoParamDeclaration(param1, param2){
-    //     return `My arguments are ${param1} and ${param2}`
-    // }
+        // a function declaration:
+        // function twoParamDeclaration(param1, param2){
+        //     return `My arguments are ${param1} and ${param2}`
+        // }
 
-    // function expression:
-    // const twoParamExpression = function(param1, param2){
-    //     return `My arguments are ${param1} and ${param2}`
-    // }
+        // a function expression:
+        // const twoParamExpression = function(param1, param2){
+        //     return `My arguments are ${param1} and ${param2}`
+        // }
 
-    // arrow function:
-    // const twoParamArrow = (param1, param2) => `My arguments are ${param1} and ${param2}`
+        // an arrow function:
+        // const twoParamArrow = (param1, param2) => `My arguments are ${param1} and ${param2}`
 
-    // multi-line arrow function
-    // const twoParamArrowMultiLine = (param1, param2) => {
-    //     return `My arguments are ${param1} and ${param2}`
-    // }   
+        // a multi-line arrow function
+        // const twoParamArrowMultiLine = (param1, param2) => {
+        //     return `My arguments are ${param1} and ${param2}`
+        // }   
 
-console.log(noParamDeclaration())
-console.log(noParamExpression())
-console.log(noParamArrow())
-console.log(noParamArrowMultiLine())
-console.log(oneParamDeclaration('this string'))
-console.log(oneParamExpression('this string'))
-console.log(oneParamArrow('this string'))
-console.log(oneParamArrowMultiLine('this string'))
-console.log(twoParamDeclaration('this first string', 'this second string'))
-console.log(twoParamExpression('this first string', 'this second string'))
-console.log(twoParamArrow('this first string', 'this second string'))
-console.log(twoParamArrowMultiLine('this first string', 'this second string'))
+
+// STRING CONCATENATIONS
+    // the + operator is used to concatenate strings, including those held 
+    // in variables.
+
+    //STRING CONCATENATION WITH VARIABLES:
+    // example:
+    // let myPet = 'armadillo';
+    // console.log('I own a pet ' + myPet + '.'); 
+    // Output: I own a pet armadillo.
+
+    //STRING INTERPOLATION:
+    // variables can be inserted, or "interpolated", into strings 
+    // we use 'template literals' for this
+    // a template literal is indicated using backticks ` `
+    // values get inserted into the placedholders we set
+    // placeholders are indicated like this: ${myPet}
+    // example:
+    // const myPet = 'armadillo';
+    // console.log(`I own a pet ${myPet}.`);
+    // Output: I own a pet armadillo.
+
+// TYPEOF:
+// The typeof keyword/operator returns the data type of a value, as a string
+
+
+// MATH
+// Math.floor()
+
+// Output: 'I own a pet armadillo.'
+// console.log(noParamDeclaration())
+// console.log(noParamExpression())
+// console.log(noParamArrow())
+// console.log(noParamArrowMultiLine())
+// console.log(oneParamDeclaration('this string'))
+// console.log(oneParamExpression('this string'))
+// console.log(oneParamArrow('this string'))
+// console.log(oneParamArrowMultiLine('this string'))
+// console.log(twoParamDeclaration('this first string', 'this second string'))
+// console.log(twoParamExpression('this first string', 'this second string'))
+// console.log(twoParamArrow('this first string', 'this second string'))
+// console.log(twoParamArrowMultiLine('this first string', 'this second string'))
