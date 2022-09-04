@@ -48,27 +48,28 @@
     // keys must be strings, but if there are no special characters we can leave off the " "
     // values can be of any data type, including functions or other objects
     // JS comes with a lot of built in objects, we can also create our own
+
     // data types are also objects, each has acess to specific properties
         // syntax:
         // let objectName = {'Property Name': 'Property Value', propName: 'Prop Value'};
     // to add or change key-value pairs, we can use dot or bracket notation and the assignment operator
 
 
+// A property is what an object has, while a method is what an object does.
+
 // PROPERTIES:
 
     // properties are stored information about an object
-    // we can access properties using dot notation or bracket notation
-    // to access using dot notation
-    
+    // we can access properties using either dot notation or bracket notation
+    // dot notation
         // syntax:
         // objectName.propertyName;
-        
-        // dot noation example:
-        // 'Hola'.length
-        // returns 4
 
-    // to access using bracket notation
-    // bracket notation lets us use a variable inside the brackets to select the keys of an object,
+    // bracket notation
+        // syntax:
+        // objectName['propertyName']
+
+    // bracket notation allows us to use a variable inside the brackets to select the keys of an object,
     // which can be especially helpful when working with functions
  
 
@@ -76,7 +77,7 @@
 
 // METHODS:
 
-    // methods are actions we can perform on objects
+    // methods are functions/actions we can perform on objects
     // data types have access to specific methods that allow us to handle instances of that data type. 
     // methods are called by appending an instance with a period, the method name, and ()
 
@@ -85,6 +86,9 @@
 
         // example:
         // 'hello'.toUpperCase()
+
+    // we can include methods in our object literals by creating ordinary, comma-separated key-value pairs
+    // the key serves as our method’s name, while the value is an anonymous function expression
 
 
 // VARIABLES IN JS:
@@ -97,8 +101,6 @@
     // can be declared without assigning a value?? is this true for const??
     // if not initialized (assigned a value), value is stored as 'undefined'
 
-
-  
 
     // const 
     // keyword const signals that a variable can't be reassigned
