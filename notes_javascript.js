@@ -266,6 +266,10 @@
         // }   
 
 
+// SPREAD SYNTAX
+// The spread operator allows you to make a copy of a list, similar to list slicing.
+// const phrase3 = [...phrase]
+
 // STRING CONCATENATIONS
     // the + operator is used to concatenate strings, including those held 
     // in variables.
