@@ -89,6 +89,8 @@
 
     // we can include methods in our object literals by creating ordinary, comma-separated key-value pairs
     // the key serves as our method’s name, while the value is an anonymous function expression
+    // object methods are invoked by appending the object’s name with the dot operator followed by the method name and ()
+
 
 
 // VARIABLES IN JS:
