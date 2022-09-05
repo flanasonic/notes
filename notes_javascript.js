@@ -320,3 +320,6 @@
 // It represents the page so that programs can change the document structure, style, and content. The DOM represents 
 // the document as nodes and objects; that way, programming languages can interact with the page. The DOM is not 
 // part of the JavaScript language, but is instead a Web API used to build websites.
+
+// The Document method querySelector() returns the first Element within the document that matches the specified 
+// selector, or group of selectors. If no matches are found, null is returned.
