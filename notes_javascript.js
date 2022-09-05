@@ -269,6 +269,7 @@
 // SPREAD SYNTAX
 // The spread operator allows you to make a copy of a list, similar to list slicing.
 // const phrase3 = [...phrase]
+// const array3 = [...array1]
 
 // STRING CONCATENATIONS
     // the + operator is used to concatenate strings, including those held 
@@ -311,3 +312,11 @@
 // console.log(twoParamExpression('this first string', 'this second string'))
 // console.log(twoParamArrow('this first string', 'this second string'))
 // console.log(twoParamArrowMultiLine('this first string', 'this second string'))
+
+
+// DOM
+// 'The Document Object Model (DOM) is the data representation of the objects that comprise the structure and 
+// content of a document on the web. The Document Object Model (DOM) is a programming interface for web documents. 
+// It represents the page so that programs can change the document structure, style, and content. The DOM represents 
+// the document as nodes and objects; that way, programming languages can interact with the page. The DOM is not 
+// part of the JavaScript language, but is instead a Web API used to build websites.
